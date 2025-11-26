@@ -30,8 +30,6 @@ function printBoard(board: Board): void {
 	console.log(board);
 }
 
-// 
-
 // Game play loop
 printBoard(board);
 const input:string = prompt("Which way? (w/a/s/d): ");

@@ -27,10 +27,7 @@ function printBoard(board) {
 	console.log(board);
 }
 
-
-
 // Game play loop
-printBoard(board)
+printBoard(board);
 const input = prompt("Which way? (w/a/s/d): ");
-console.log(input)
-console.log(1)
+console.log(input);
