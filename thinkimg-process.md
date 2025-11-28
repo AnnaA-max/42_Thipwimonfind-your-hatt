@@ -107,11 +107,23 @@
 
 <!-- Thinking Process -->
 <!-- 1. Workflow Planning -->
+  Game Start -> printBoard -> getPlayerInput(w/a/s/d)-> newPosition of Player -> 
+  Check Game Rules (1 Wins by finding the hat. 2 Loses by landing in a hole. 3. Loses by moving outside the board.) -> if 1. WIN/Lose == end game// 2.newPosition == EMPTY ; continue play game  -> Game Loop
+
 <!-- 2.1. Board Functions (Hardcoded) -->
+  - show 2D array
+  - Board tiles
 <!-- 2.2. Board Functions (Generated) -->
 <!-- 3. Input Functions -->
+  -read input -> w/a/s/d ,ถ้าไม่ใช้อักษรที่กำหนด ประกาศInvalid input และรับค่าอีกครั้ง
 <!-- 4. Movement Functions -->
+  moveUp / moveDown / moveLeft / moveRight  รับ(row,col) แล้วคืนตำแหน่ง(row: newRow, col: newCol )
 <!-- 5. Game Rule Functions -->
+  1. outsise the booard > lose
+    จากตำแหน่งPLAYER = [0][0] PLAYER เลือกmove up[col -1] และ moveLeft [row -1] 
+  2. hole : lose
+  3. hat : WIN
+  4. Empty : continue
 <!-- 6. Game Play Loop -->
 
 [Back to Table of Contents](#table-of-contents)
