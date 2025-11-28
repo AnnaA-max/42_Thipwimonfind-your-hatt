@@ -21,10 +21,13 @@ let playerRow = 0;
 let playerCol = 0;
 let playing = true;
 
+
 // Print board
 function printBoard(board) {
-	console.clear(); // call console.clear() before print each move
-	console.log(board);
+  console.clear(); // เคลียร์หน้าจอ (ถ้าต้องการ)
+  for (let row of board) {
+  	console.log(row.join(""));
+  }
 }
 
 // Game play loop
